@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LiveSaves.Views.Items"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:LiveSaves.Models"
+    xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
+    xmlns:viewmodels="clr-namespace:LiveSaves.ViewModels"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Name="ListPage"
+    Title="My Events"
+    x:DataType="viewmodels:UserLiveViewModel"
+    BackgroundColor="Black">
+
+    <ContentPage.BindingContext>
+        <viewmodels:UserLiveViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddCommand}"/>
+        
+        <ToolbarItem Text="Clear" Command="{Binding ClearCommand}"/>
+        <ToolbarItem Text="Refresh/Retrieve" Command="{Binding RefreshCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    
+               
+       
+
+    <ListView
+        
+        BackgroundColor="Transparent"
+        CachingStrategy="RecycleElement"
+        HasUnevenRows="True"
+        IsPullToRefreshEnabled="False"
+        IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
+        ItemsSource="{Binding Live}"
+         RefreshCommand="{Binding RefreshCommand}"
+        RefreshControlColor="Red"
+        SelectionMode="None"
+        SeparatorVisibility="None">
+        
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Live">
+                
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem
+                            Command="{Binding Source={x:Reference ListPage}, Path=BindingContext.RemoveCommand}"
+                            CommandParameter="{Binding .}"
+                            IsDestructive="True"
+                            Text="Delete" />
+                    </ViewCell.ContextActions>
+                    
+                    <ScrollView>
+                    
+                        <StackLayout Orientation="Vertical" Margin="50">
+                        <Image Scale="2" HeightRequest="100" WidthRequest="200"   x:Name="Image" Source="null"/>
+                                <Button FontFamily="Fonty" FontSize="Small" Text="Upload Photo" Clicked="ImageButton_Clicked" BackgroundColor="White" TextColor="Black"/>
+                           
+                        <Label
+                            FontFamily="Fonty"
+                                        FontSize="Large"
+                                        Text="{Binding Band}"
+                            TextColor="White"
+                            HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center"
+                                        VerticalOptions="Center" />
+                                    <Label
+                                        FontFamily="Fonty"
+                                        FontSize="Large"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center"
+                                        TextColor="White"
+                                        Text="{Binding Date}"
+                                        VerticalOptions="Center" />
+                                    <Button x:Name="Venue"
+                                            FontFamily="Fonty"
+                                        FontSize="Large"
+                                            BackgroundColor="White"
+                                            TextColor="Black"
+                                            Clicked="Venue_Clicked"
+                                        Text="{Binding Venue}"
+                                        VerticalOptions="Center" />
+                  
+                             
+                            </StackLayout>
+                       
+                   
+                        </ScrollView>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

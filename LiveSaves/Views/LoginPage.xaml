@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LiveSaves.Views.LoginPage"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="Username:"/>
+            <Entry x:Name = "InputUser" Placeholder="Username"/>
+            <Label Text="Password:"/>
+            <Entry x:Name = "InputPass" IsPassword="True" Placeholder="Password"/>
+            <Button x:Name="Login" Text="Login" Clicked="Login_Clicked"/>
+            <Label x:Name="ErrorLabel" TextColor="#FF0000"></Label>
+            <Button x:Name="Register" Text="Register" Clicked="Register_Clicked" HorizontalOptions="Center">
+            
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

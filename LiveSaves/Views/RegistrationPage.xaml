@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LiveSaves.Views.RegistrationPage"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Register Account">
+    <ContentPage.Content>
+<StackLayout VerticalOptions="CenterAndExpand" Padding="5">  
+      <StackLayout Orientation="Horizontal">  
+          
+      </StackLayout>
+      <Entry x:Name="UserName" Placeholder="User Name"></Entry>
+      <Label x:Name="NoUser" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Entry x:Name="Email" Placeholder="Email"></Entry>
+      <Label x:Name="NoEmail" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Entry x:Name="Pass" Placeholder="Password" IsPassword="True"></Entry>
+      <Label x:Name="NoPass" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Label x:Name="BadPass" TextColor="Red" Text="Please Use both Upper and Lowercase Letters" IsVisible="False"/>
+      <Entry x:Name="Pass2" Placeholder="Confirm Password" IsPassword="True"></Entry>
+      <Label x:Name="NoPass2" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Button Text="Sign Up" Clicked="Register_Clicked"></Button>  
+      <Button Clicked="Button_Clicked" Text="Already have an account?" TextColor="White"></Button>  
+  </StackLayout>  
+    </ContentPage.Content>
+</ContentPage>
