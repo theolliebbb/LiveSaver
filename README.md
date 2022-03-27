@@ -1,5 +1,5 @@
 # LiveSaver
-Application for registering events C#, SQLite, Xamarin
+Application for registering live events C#, SQLite, Xamarin
 
 -Login and Registration using a local SQLite Database
 
