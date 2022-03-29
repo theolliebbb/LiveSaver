@@ -10,3 +10,5 @@ Application for registering live events C#, SQLite, Xamarin
 -CRUD integration
 
 -MVVM
+
+-Full Functionality Vid: https://drive.google.com/file/d/18ahZpkPKle5SnNoqvjNdFQU5DclFSSpa/view?usp=sharing
