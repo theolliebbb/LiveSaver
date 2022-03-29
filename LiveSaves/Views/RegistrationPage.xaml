@@ -3,23 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LiveSaves.Views.RegistrationPage"
              Shell.FlyoutBehavior="Disabled"
-             Title="Register Account">
+             Title="Register Account"
+             BackgroundColor="Black">
     <ContentPage.Content>
 <StackLayout VerticalOptions="CenterAndExpand" Padding="5">  
       <StackLayout Orientation="Horizontal">  
           
       </StackLayout>
-      <Entry x:Name="UserName" Placeholder="User Name"></Entry>
-      <Label x:Name="NoUser" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
-      <Entry x:Name="Email" Placeholder="Email"></Entry>
-      <Label x:Name="NoEmail" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
-      <Entry x:Name="Pass" Placeholder="Password" IsPassword="True"></Entry>
-      <Label x:Name="NoPass" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
-      <Label x:Name="BadPass" TextColor="Red" Text="Please Use both Upper and Lowercase Letters" IsVisible="False"/>
-      <Entry x:Name="Pass2" Placeholder="Confirm Password" IsPassword="True"></Entry>
-      <Label x:Name="NoPass2" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
-      <Button Text="Sign Up" Clicked="Register_Clicked"></Button>  
-      <Button Clicked="Button_Clicked" Text="Already have an account?" TextColor="White"></Button>  
+    <Label Text="Event Lister Registration Page" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Fonty" TextColor="GhostWhite"/>
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label/>
+      <Entry x:Name="UserName" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="User Name"></Entry>
+      <Label x:Name="NoUser" FontFamily="Fonty" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Entry x:Name="Email" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="Email"></Entry>
+      <Label x:Name="NoEmail" FontFamily="Fonty"  TextColor="Red" Text="Please Input Email" IsVisible="False"/>
+      <Entry x:Name="Pass" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="Password" IsPassword="True"></Entry>
+      <Label x:Name="NoPass" FontFamily="Fonty"  TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Label x:Name="BadPass" FontFamily="Fonty"  TextColor="Red" Text="Please Use both Upper and Lowercase Letters" IsVisible="False"/>
+      <Entry x:Name="Pass2" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="Confirm Password" IsPassword="True"></Entry>
+      <Label x:Name="NoPass2" FontFamily="Fonty"  TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Button Text="Sign Up" FontFamily="Fonty" BackgroundColor="Black" TextColor="GhostWhite" Clicked="Register_Clicked"></Button>  
+      <Button Clicked="Button_Clicked" FontFamily="Fonty" BackgroundColor="Black" TextColor="GhostWhite" Text="Already have an account?" ></Button>  
   </StackLayout>  
     </ContentPage.Content>
 </ContentPage>

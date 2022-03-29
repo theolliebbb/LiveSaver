@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace LiveSaves.Models
 {
-    public class Live
+    public class Live  
     {
        
         [PrimaryKey, AutoIncrement]
@@ -14,5 +14,6 @@ namespace LiveSaves.Models
         public string Venue { get; set; }
         public string Image { get; set; }
         public string MapLocation { get; set; }
+        
     }
 }

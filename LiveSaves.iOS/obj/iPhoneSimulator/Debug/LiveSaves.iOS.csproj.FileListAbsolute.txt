@@ -1,0 +1,80 @@
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/LiveSaves.iOS.exe
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/LiveSaves.iOS.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/MvvmHelpers.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/MvvmHelpers.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/SQLite-net.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.nativelibrary.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ar/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ca/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/cs/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/da/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/de/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/el/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/es/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/fi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/fr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/he/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/hi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/hr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/hu/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/id/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/it/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ja/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ko/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ms/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/nb/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/nl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/pl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/pt/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ro/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/ru/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/sk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/sv/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/th/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/tr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/uk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/vi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/LiveSaves.dll
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/bin/iPhoneSimulator/Debug/LiveSaves.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/actool/_PartialAppManifest.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/actool/_BundleResourceWithLogicalName.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/actool/_ProcessedImageAssetsPath.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/ibtool/_BundleResourceWithLogicalName.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/coremlc/_PartialAppManifest.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/coremlc/_BundleResourceWithLogicalName.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/_ProcessedBundleResourcesPath.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/_ProcessedContentPath.items
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/icon_about.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/icon_about@2x.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/icon_about@3x.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/icon_feed.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/icon_feed@2x.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/icon_feed@3x.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/xamarin_logo.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/xamarin_logo@2x.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/xamarin_logo@3x.png
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 mini-14.5/optimized/
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/LiveSaves.iOS.csproj.AssemblyReference.cache
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/LiveSaves.iOS.csproj.CoreCompileInputs.cache
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/LiveSaves.iOS.csproj.CopyComplete
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/LiveSaves.iOS.exe
+/Users/oll/Projects/LiveSaves/LiveSaves.iOS/obj/iPhoneSimulator/Debug/LiveSaves.iOS.pdb

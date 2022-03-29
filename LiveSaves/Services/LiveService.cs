@@ -6,51 +6,68 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using Xamarin.Forms;
+using LiveSaves.Views;
 
 namespace LiveSaves.Services
 {
     public static class LiveService
     {
-        
-        static SQLiteAsyncConnection db;
+        public static string Use = LoginPage.User;
+        static SQLiteConnection db;
         static async Task Init()
+        {
+            db = null;
+            if (db != null)
+                return;
+
+           
+            var databasePath = Path.Combine(FileSystem.AppDataDirectory, $"Lives{UserDisplayName.displayName}.db");
+
+            db = new SQLiteConnection(databasePath);
+
+            db.CreateTable<Live>();
+        }
+        static async Task Initminus()
         {
             if (db != null)
                 return;
 
-            
-            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserLives.db");
 
-            db = new SQLiteAsyncConnection(databasePath);
+            var databasePath = Path.Combine(FileSystem.AppDataDirectory, $"Lives{UserDisplayName.displayName}.db");
 
-            await db.CreateTableAsync<Live>();
+            db = new SQLiteConnection(databasePath);
+
+            db.CreateTable<Live>();
         }
 
         public static async Task AddLive(string band, string date, string venue, string image)
         {
-            await Init();
+            await Initminus();
 
             var live = new Live
             {
                 Band = band,
                 Date = date,
                 Venue = venue,
-                Image = "plus.jpg",
-                MapLocation = venue,
+                Image = image
+                
+               
                 
 
         };
             
-            var id = await db.InsertAsync(live);
+            var id = db.Insert(live);
         }
+
 
 
         public static async Task ClearLive()
         {
 
-            await Init();
+            await Initminus();
 
-            await db.DeleteAllAsync<Live>();
+             db.DeleteAll<Live>();
         }
 
         public static async Task RemoveLive(int id)
@@ -58,15 +75,21 @@ namespace LiveSaves.Services
 
             await Init();
 
-            await db.DeleteAsync<Live>(id);
+            db.Delete<Live>(id);
         }
+
 
         public static async Task<IEnumerable<Live>> GetLive()
         {
-            await Init();
+            await Initminus();
 
-            var live = await db.Table<Live>().ToListAsync();
+            var live = db.Table<Live>().ToList();
             return live;
+        }
+        public static void Logout()
+        {
+            db = null;
+            App.Current.MainPage = new NavigationPage(new LoginPage());
         }
     }
 }

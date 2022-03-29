@@ -35,7 +35,7 @@
 
 	/* 3: LiveSaves.dll */
 	/* uncompressed_file_size */
-	.word	112640
+	.word	118272
 	/* loaded */
 	.byte	0
 	/* data */
@@ -431,7 +431,7 @@
 
 	/* 47: mscorlib.dll */
 	/* uncompressed_file_size */
-	.word	2061312
+	.word	2062336
 	/* loaded */
 	.byte	0
 	/* data */

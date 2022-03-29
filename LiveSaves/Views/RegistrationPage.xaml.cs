@@ -12,10 +12,19 @@ namespace LiveSaves.Views
 {
     public partial class RegistrationPage : ContentPage
     {
+        static SQLiteConnection db;
         public RegistrationPage()
         {
             InitializeComponent();
- 
+            if (db != null)
+                return;
+
+
+            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserDB.db3");
+
+            db = new SQLiteConnection(databasePath);
+
+            db.CreateTable<RegUser>();
         }
 
         static bool IsValidEmail(string email)
@@ -33,8 +42,7 @@ namespace LiveSaves.Views
 
         public bool ValidateUser(string user)
         {
-            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserDB.db3");
-            var db = new SQLiteConnection(databasePath);
+           
             var results = db.Table<RegUser>().Where(v => v.UserName == user).ToList();
 
             return (results.Count > 0);
@@ -42,8 +50,7 @@ namespace LiveSaves.Views
 
         public bool ValidateEmail(string email)
         {
-            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserDB.db3");
-            var db = new SQLiteConnection(databasePath);
+            
             var results = db.Table<RegUser>().Where(v => v.Email == email).ToList();
 
             return (results.Count > 0);
@@ -52,8 +59,8 @@ namespace LiveSaves.Views
 
         void Register_Clicked(object sender, System.EventArgs e)
         {
-            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserDB.db3");
-            var db = new SQLiteConnection(databasePath);
+            
+            
             if (Pass.Text != null)
             {
                 var lowerPass = Pass.Text.ToLower();
@@ -79,7 +86,7 @@ namespace LiveSaves.Views
                         NoPass.IsVisible = false;
                         NoPass2.IsVisible = false;
                         DisplayAlert("Error!", "Please Input All Fields!", "Try Again!");
-                        NoUser.IsVisible = true;
+                        
                     }
                     else if (UserName.Text == Pass.Text)
                     {
@@ -152,7 +159,8 @@ namespace LiveSaves.Views
                     else
                     {
 
-
+                        var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserDB.db3");
+                        db = new SQLiteConnection(databasePath);
                         db.CreateTable<RegUser>();
 
                         var item = new RegUser()
@@ -171,7 +179,7 @@ namespace LiveSaves.Views
                         App.Current.MainPage = new NavigationPage(new LoginPage());
                     };
                 }
-                
+
 
             }
             else

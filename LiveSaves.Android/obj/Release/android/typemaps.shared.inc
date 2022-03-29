@@ -55,62 +55,62 @@
 	.section	.rodata.map_aname.9,"aMS",@progbits,1
 	.type	.L.map_aname.9, @object
 .L.map_aname.9:
-	.asciz	"Xamarin.Essentials"
-	.size	.L.map_aname.9, 19
+	.asciz	"LiveSaves.Android"
+	.size	.L.map_aname.9, 18
 
 	.section	.rodata.map_aname.10,"aMS",@progbits,1
 	.type	.L.map_aname.10, @object
 .L.map_aname.10:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
-	.size	.L.map_aname.10, 34
+	.asciz	"Xamarin.Essentials"
+	.size	.L.map_aname.10, 19
 
 	.section	.rodata.map_aname.11,"aMS",@progbits,1
 	.type	.L.map_aname.11, @object
 .L.map_aname.11:
-	.asciz	"Xamarin.Forms.Platform.Android"
-	.size	.L.map_aname.11, 31
+	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
+	.size	.L.map_aname.11, 34
 
 	.section	.rodata.map_aname.12,"aMS",@progbits,1
 	.type	.L.map_aname.12, @object
 .L.map_aname.12:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	.L.map_aname.12, 26
+	.asciz	"Xamarin.Forms.Platform.Android"
+	.size	.L.map_aname.12, 31
 
 	.section	.rodata.map_aname.13,"aMS",@progbits,1
 	.type	.L.map_aname.13, @object
 .L.map_aname.13:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	.L.map_aname.13, 30
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	.L.map_aname.13, 26
 
 	.section	.rodata.map_aname.14,"aMS",@progbits,1
 	.type	.L.map_aname.14, @object
 .L.map_aname.14:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	.L.map_aname.14, 26
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
+	.size	.L.map_aname.14, 30
 
 	.section	.rodata.map_aname.15,"aMS",@progbits,1
 	.type	.L.map_aname.15, @object
 .L.map_aname.15:
-	.asciz	"Xamarin.Google.Guava.ListenableFuture"
-	.size	.L.map_aname.15, 38
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	.L.map_aname.15, 26
 
 	.section	.rodata.map_aname.16,"aMS",@progbits,1
 	.type	.L.map_aname.16, @object
 .L.map_aname.16:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	.L.map_aname.16, 22
+	.asciz	"Xamarin.Google.Guava.ListenableFuture"
+	.size	.L.map_aname.16, 38
 
 	.section	.rodata.map_aname.17,"aMS",@progbits,1
 	.type	.L.map_aname.17, @object
 .L.map_aname.17:
-	.asciz	"Xamarin.AndroidX.RecyclerView"
-	.size	.L.map_aname.17, 30
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	.L.map_aname.17, 22
 
 	.section	.rodata.map_aname.18,"aMS",@progbits,1
 	.type	.L.map_aname.18, @object
 .L.map_aname.18:
-	.asciz	"LiveSaves.Android"
-	.size	.L.map_aname.18, 18
+	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.size	.L.map_aname.18, 30
 
 	.section	.rodata.map_aname.19,"aMS",@progbits,1
 	.type	.L.map_aname.19, @object

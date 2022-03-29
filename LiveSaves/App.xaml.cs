@@ -14,7 +14,7 @@ namespace LiveSaves
             InitializeComponent();
 
             
-            MainPage = new RegistrationPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

@@ -8,7 +8,7 @@
     xmlns:viewmodels="clr-namespace:LiveSaves.ViewModels"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     x:Name="ListPage"
-    Title="My Events"
+    Title="Events"
     x:DataType="viewmodels:UserLiveViewModel"
     BackgroundColor="Black">
 
@@ -27,14 +27,16 @@
         
         <ToolbarItem Text="Clear" Command="{Binding ClearCommand}"/>
         <ToolbarItem Text="Refresh/Retrieve" Command="{Binding RefreshCommand}"/>
+        <ToolbarItem Text="Logout" Command="{Binding LogoutCommand}"/>
+
     </ContentPage.ToolbarItems>
 
     
                
-       
-
+       <StackLayout>
+           <Label x:Name="Welcome" HorizontalTextAlignment="Center" Text="None" FontFamily="Fonty"/>
     <ListView
-        
+        x:Name="List"
         BackgroundColor="Transparent"
         CachingStrategy="RecycleElement"
         HasUnevenRows="True"
@@ -61,26 +63,31 @@
                     <ScrollView>
                     
                         <StackLayout Orientation="Vertical" Margin="50">
-                        <Image Scale="2" HeightRequest="100" WidthRequest="200"   x:Name="Image" Source="null"/>
-                                <Button FontFamily="Fonty" FontSize="Small" Text="Upload Photo" Clicked="ImageButton_Clicked" BackgroundColor="White" TextColor="Black"/>
+                        <Image Scale="2" HeightRequest="240" WidthRequest="450"   x:Name="Image" Source="{Binding Image}"/>
+                              
                            
                         <Label
                             FontFamily="Fonty"
+                                        x:Name="Bands"
                                         FontSize="Large"
                                         Text="{Binding Band}"
                             TextColor="White"
+                            BackgroundColor="Black"
                             HorizontalTextAlignment="Center"
                                         VerticalTextAlignment="Center"
                                         VerticalOptions="Center" />
                                     <Label
+                                        x:Name="Dates"
                                         FontFamily="Fonty"
                                         FontSize="Large"
+                                        BackgroundColor="Black"
                                         HorizontalTextAlignment="Center"
                                         VerticalTextAlignment="Center"
                                         TextColor="White"
                                         Text="{Binding Date}"
                                         VerticalOptions="Center" />
-                                    <Button x:Name="Venue"
+                                    <Button x:Name="Venues"
+
                                             FontFamily="Fonty"
                                         FontSize="Large"
                                             BackgroundColor="White"
@@ -89,7 +96,15 @@
                                         Text="{Binding Venue}"
                                         VerticalOptions="Center" />
                   
-                             
+                                    <Button x:Name="Deletes"
+                                            FontFamily="Fonty"
+                                        FontSize="Large"
+                                            BackgroundColor="White"
+                                            TextColor="Black"
+                                            Command="{Binding Source={x:Reference ListPage}, Path=BindingContext.RemoveCommand}"
+                            CommandParameter="{Binding .}"
+                                        Text="Delete"
+                                        VerticalOptions="Center" />
                             </StackLayout>
                        
                    
@@ -98,5 +113,5 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+           </StackLayout>
 </ContentPage>
