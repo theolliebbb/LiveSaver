@@ -28,6 +28,7 @@ namespace LiveSaves.ViewModels
         static SQLiteConnection db;
         public AsyncCommand ClearCommand { get; }
         public AsyncCommand LogoutCommand { get; }
+        public AsyncCommand<Live> EditCommand { get; }
         public AsyncCommand<Live> RemoveCommand { get; }
         public string Welcome = $"Welcome, {LoginPage.User}";
         public Live SelectedLive { get; set; }
@@ -46,12 +47,12 @@ namespace LiveSaves.ViewModels
             AddCommand = new AsyncCommand(Add);
             RemoveCommand = new AsyncCommand<Live>(Remove);
             LogoutCommand = new AsyncCommand(LogoutC);
-            
+            EditCommand = new AsyncCommand<Live>(Edit);
         }
 
         async Task Add()
         {
-            if (db != null)
+            /*if (db != null)
                 return;
             try
             {
@@ -80,7 +81,9 @@ namespace LiveSaves.ViewModels
             var image = imagePath;
 
             await LiveService.AddLive(band, date, venue, image);
-            await Refresh();
+             
+            await Refresh();*/
+            App.Current.MainPage = new NavigationPage(new NewPage());
         }
         
         async void LoadPhotoAsync(FileResult photo)
@@ -103,7 +106,11 @@ namespace LiveSaves.ViewModels
 
         }
 
-
+        async Task Edit(Live live)
+        {
+            await LiveService.EditEvent(live.Id);
+            await Refresh();
+        }
         async Task Clear()
         {
             await LiveService.ClearLive();
@@ -133,6 +140,22 @@ namespace LiveSaves.ViewModels
             Live.AddRange(lives);
 
             IsRefreshing = false;
+
+        }
+        public async Task MiniRefresh()
+        {
+
+           
+
+            
+
+            Live.Clear();
+
+            var lives = await LiveService.GetLive();
+
+            Live.AddRange(lives);
+
+            
 
         }
         public async Task LogoutC()

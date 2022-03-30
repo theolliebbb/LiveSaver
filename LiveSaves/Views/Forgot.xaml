@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LiveSaves.Views.Forgot" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Padding="0" VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="Event Lister Login Page" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Fonty" TextColor="GhostWhite"/>
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label Text="Username:" FontFamily="Fonty" TextColor="GhostWhite"/>
+            <Entry x:Name = "InputUser"  TextColor="GhostWhite"  PlaceholderColor="Gray" Placeholder="Username"/>
+            <Label IsVisible="False" x:Name="ShowUser" Text="Username:" FontFamily="Fonty" TextColor="GhostWhite"/>
+            <Entry IsVisible="False" x:Name="Pass" PlaceholderColor="Gray"  TextColor="GhostWhite" Placeholder="Password" IsPassword="True"></Entry>
+            <Entry IsVisible="False" x:Name="Pass2"  PlaceholderColor="Gray" TextColor="GhostWhite" Placeholder="Confirm Password" IsPassword="True"></Entry>
+            <Button IsVisible="True" x:Name="ForgotButton"  BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Text="Confirm Username" Clicked="ForgotButton_Clicked" />
+            <Button IsVisible="False" x:Name="ConfirmButton"  BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Text="Reset Password" Clicked="ConfirmButton_Clicked" />
+
+            
+            
+
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

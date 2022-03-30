@@ -17,3 +17,6 @@
 /Users/oll/Projects/LiveSaves/LiveSaves/obj/Release/netstandard2.0/LiveSaves.dll
 /Users/oll/Projects/LiveSaves/LiveSaves/obj/Release/netstandard2.0/ref/LiveSaves.dll
 /Users/oll/Projects/LiveSaves/LiveSaves/obj/Release/netstandard2.0/LiveSaves.pdb
+/Users/oll/Projects/LiveSaves/LiveSaves/obj/Release/netstandard2.0/Views/EditPage.xaml.g.cs
+/Users/oll/Projects/LiveSaves/LiveSaves/obj/Release/netstandard2.0/Views/Forgot.xaml.g.cs
+/Users/oll/Projects/LiveSaves/LiveSaves/obj/Release/netstandard2.0/Views/NewPage.xaml.g.cs

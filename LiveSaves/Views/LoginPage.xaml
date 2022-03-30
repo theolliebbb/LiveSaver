@@ -14,13 +14,14 @@
             <Label/>
             <Label/>
             <Label Text="Username:" FontFamily="Fonty" TextColor="GhostWhite"/>
-            <Entry x:Name = "InputUser" FontFamily="Fonty" TextColor="GhostWhite"  PlaceholderColor="Gray" Placeholder="Username"/>
+            <Entry x:Name = "InputUser"  TextColor="GhostWhite"  PlaceholderColor="Gray" Placeholder="Username"/>
             <Label Text="Password:" FontFamily="Fonty" TextColor="GhostWhite" />
-            <Entry x:Name = "InputPass" IsPassword="True" FontFamily="Fonty" TextColor="GhostWhite"  PlaceholderColor="Gray" Placeholder="Password"/>
+            <Entry x:Name = "InputPass" IsPassword="True"  TextColor="GhostWhite"  PlaceholderColor="Gray" Placeholder="Password"/>
             <Button x:Name="Login"  BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Text="Login" Clicked="Login_Clicked"/>
             
             <Button x:Name="Register"  BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Text="Register" Clicked="Register_Clicked" />
-            <Button x:Name="Clear" Text="Clear Accounts" BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Clicked="ClearAll_Clicked"/>
+            <Button x:Name="Clear" Text="Delete Account" BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Clicked="ClearAll_Clicked"/>
+            <Button x:Name="Forgot" Text="Forgot Your Password?" BackgroundColor="Black" FontFamily="Fonty" TextColor="GhostWhite" Clicked="Forgot_Clicked"/>
             
 
            

@@ -14,7 +14,7 @@ namespace LiveSaves.Services
     public static class LiveService
     {
         public static string Use = LoginPage.User;
-        static SQLiteConnection db;
+        public static SQLiteConnection db;
         static async Task Init()
         {
             db = null;
@@ -69,7 +69,18 @@ namespace LiveSaves.Services
 
              db.DeleteAll<Live>();
         }
+        public static async Task EditEvent(int id)
+        {
 
+            var detail = db.Get<Live>(id);
+            App.Current.MainPage = new NavigationPage (new EditPage(detail));
+
+
+
+
+           
+
+        }
         public static async Task RemoveLive(int id)
         {
 

@@ -21,16 +21,37 @@ namespace LiveSaves.Views
     public partial class Items : ContentPage
     {
         
-        
+        List<Live> live;
         static SQLiteConnection db;
-        
-      
+        public ObservableRangeCollection<Live> Live { get; set; }
+
         public Items()
         {
             InitializeComponent();
             Init();
-        
+          
         }
+
+        protected override void OnAppearing()
+        {
+            if (BindingContext is UserLiveViewModel vm)
+            {
+                vm.Refresh();
+            }
+        }
+
+        private async void EditEvent(object sender, ItemTappedEventArgs e)
+        {
+
+
+
+            var details = e.Item as Live;
+
+
+            await Navigation.PushAsync(new EditPage(details));
+            
+        }
+
         
 
         public async void Init()
@@ -73,6 +94,7 @@ namespace LiveSaves.Views
 
         }
 
+        
 
     }
 }

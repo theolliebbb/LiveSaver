@@ -17,3 +17,6 @@
 /Users/oll/Projects/LiveSaves/LiveSaves/obj/Debug/netstandard2.0/ref/LiveSaves.dll
 /Users/oll/Projects/LiveSaves/LiveSaves/obj/Debug/netstandard2.0/LiveSaves.pdb
 /Users/oll/Projects/LiveSaves/LiveSaves/obj/Debug/netstandard2.0/LiveSaves.csproj.AssemblyReference.cache
+/Users/oll/Projects/LiveSaves/LiveSaves/obj/Debug/netstandard2.0/Views/EditPage.xaml.g.cs
+/Users/oll/Projects/LiveSaves/LiveSaves/obj/Debug/netstandard2.0/Views/NewPage.xaml.g.cs
+/Users/oll/Projects/LiveSaves/LiveSaves/obj/Debug/netstandard2.0/Views/Forgot.xaml.g.cs

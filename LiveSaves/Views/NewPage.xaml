@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LiveSaves.Views.NewPage" Title="Add Event" BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="5">
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10" FontFamily="Fonty" TextColor="White" Text="Band" />
+            <Entry TextColor="GhostWhite" BackgroundColor="SlateGray"  PlaceholderColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  Placeholder="Band"  FontSize="Small" x:Name="band"/>
+            <Label  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10" FontFamily="Fonty" TextColor="White"  Text="Date" />
+            <DatePicker HorizontalOptions="FillAndExpand" BackgroundColor="SlateGray" VerticalOptions="CenterAndExpand"  x:Name="date"
+                         TextColor="White"
+                    MinimumDate="01/01/2000"
+                    Format="M_d_yyyy"
+                    
+                    />
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10" FontFamily="Fonty" TextColor="White" Text="Venue" />
+            <Entry TextColor="GhostWhite" BackgroundColor="SlateGray"  PlaceholderColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"   FontSize="Small" Placeholder="Venue" x:Name="venue" 
+                   />
+            <Label x:Name="image"  IsVisible="False"/>
+            <Image HeightRequest="200" WidthRequest="400" Source="imagePath" IsVisible="False" x:Name="ImageViewer"></Image>
+  <Button FontFamily="Fonty" Text="Upload Image" Clicked="Image_ClickedAsync" HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="White" TextColor="Black" x:Name="Image"/>
+
+            <Button FontFamily="Fonty" Text="Save" Clicked="SaveEvent" HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="White" TextColor="Black" x:Name="saveBtn"/>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

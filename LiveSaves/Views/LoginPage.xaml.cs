@@ -16,8 +16,11 @@ namespace LiveSaves.Views
     public class UserDisplayName
     {
         public static string displayName;
-        
-        
+
+        void Forgot_Clicked(System.Object sender, System.EventArgs e)
+        {
+        }
+
     }
     public partial class LoginPage : ContentPage
     {
@@ -64,15 +67,34 @@ namespace LiveSaves.Views
 
 
 
-            db.CreateTable<RegUser>();
-            db.DeleteAll<RegUser>();
-            var databasePath = Path.Combine(FileSystem.AppDataDirectory, $"Lives{UserDisplayName.displayName}.db");
+            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "UserDB.db3");
 
             db = new SQLiteConnection(databasePath);
-            db.DeleteAll<Live>();
-            await DisplayAlert("Clearing Complete!", "All Accounts Deleted!", "Ok");
+
             db.CreateTable<RegUser>();
-            
+
+
+            var results = db.Table<RegUser>().Where(v => v.UserName
+                == InputUser.Text && v.Password == InputPass.Text).ToList();
+
+
+
+            User = InputUser.Text;
+            if (results.Count > 0 && InputUser.Text != null && InputPass.Text != null)
+            {
+
+                var thelist = db.Table<RegUser>()
+                        .Where(v => v.UserName
+                == InputUser.Text).FirstOrDefault();
+                
+                db.Delete(thelist);
+                await DisplayAlert("Success!", "User Successfully Deleted!", "OK");
+            }
+            else
+            {
+                await DisplayAlert("Error!", "Please Enter Correct User Name and Password Combination to Delete!", "Try Again!");
+            }
+
         }
         async void Login_Clicked(System.Object sender, System.EventArgs e)
         {
@@ -105,6 +127,10 @@ namespace LiveSaves.Views
         async void Register_Clicked(System.Object sender, System.EventArgs e)
         {
             App.Current.MainPage = new NavigationPage(new RegistrationPage());
+        }
+        async void Forgot_Clicked(System.Object sender, System.EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Forgot());
         }
     }
 }

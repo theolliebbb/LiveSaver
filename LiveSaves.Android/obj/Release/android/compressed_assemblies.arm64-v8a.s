@@ -35,7 +35,7 @@
 
 	/* 3: LiveSaves.dll */
 	/* uncompressed_file_size */
-	.word	118272
+	.word	139264
 	/* loaded */
 	.byte	0
 	/* data */
@@ -44,7 +44,7 @@
 
 	/* 4: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.word	2143744
+	.word	2144768
 	/* loaded */
 	.byte	0
 	/* data */
@@ -251,7 +251,7 @@
 
 	/* 27: Xamarin.AndroidX.Core.dll */
 	/* uncompressed_file_size */
-	.word	531968
+	.word	523776
 	/* loaded */
 	.byte	0
 	/* data */
@@ -431,7 +431,7 @@
 
 	/* 47: mscorlib.dll */
 	/* uncompressed_file_size */
-	.word	2062336
+	.word	2061824
 	/* loaded */
 	.byte	0
 	/* data */

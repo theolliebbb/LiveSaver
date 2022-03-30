@@ -15,14 +15,14 @@
             <Label/>
             <Label/>
             <Label/>
-      <Entry x:Name="UserName" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="User Name"></Entry>
+      <Entry x:Name="UserName" PlaceholderColor="Gray" TextColor="GhostWhite" Placeholder="User Name"></Entry>
       <Label x:Name="NoUser" FontFamily="Fonty" TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
-      <Entry x:Name="Email" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="Email"></Entry>
+      <Entry x:Name="Email" PlaceholderColor="Gray" TextColor="GhostWhite" Placeholder="Email"></Entry>
       <Label x:Name="NoEmail" FontFamily="Fonty"  TextColor="Red" Text="Please Input Email" IsVisible="False"/>
-      <Entry x:Name="Pass" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="Password" IsPassword="True"></Entry>
+      <Entry x:Name="Pass" PlaceholderColor="Gray"  TextColor="GhostWhite" Placeholder="Password" IsPassword="True"></Entry>
       <Label x:Name="NoPass" FontFamily="Fonty"  TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
       <Label x:Name="BadPass" FontFamily="Fonty"  TextColor="Red" Text="Please Use both Upper and Lowercase Letters" IsVisible="False"/>
-      <Entry x:Name="Pass2" PlaceholderColor="Gray" FontFamily="Fonty" TextColor="GhostWhite" Placeholder="Confirm Password" IsPassword="True"></Entry>
+      <Entry x:Name="Pass2" PlaceholderColor="Gray" TextColor="GhostWhite" Placeholder="Confirm Password" IsPassword="True"></Entry>
       <Label x:Name="NoPass2" FontFamily="Fonty"  TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
       <Button Text="Sign Up" FontFamily="Fonty" BackgroundColor="Black" TextColor="GhostWhite" Clicked="Register_Clicked"></Button>  
       <Button Clicked="Button_Clicked" FontFamily="Fonty" BackgroundColor="Black" TextColor="GhostWhite" Text="Already have an account?" ></Button>  

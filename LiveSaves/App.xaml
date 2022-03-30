@@ -8,6 +8,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
+             <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="Black"/>
+        <Setter Property="BarTextColor" Value="White"/>
+        </Style>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
