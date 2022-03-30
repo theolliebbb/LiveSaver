@@ -11,7 +11,7 @@ Application for registering events C#, SQLite, Xamarin
 
 - Restrictions on passwords (Must be at least 8 characters, can't be the same as username, Must have upper and Lower Case letters)
 
--User Accounts saved to SQLite Database
+- User Accounts saved to SQLite Database
 
 - MVVM
 
