@@ -24,3 +24,6 @@ Application for registering events C#, SQLite, Xamarin
 - All paramaters able to be edited
 
 Full Functionality Video: https://drive.google.com/file/d/1BG4s-QtixJbtwvpqnI41gNTrsCy3pJfM/view?usp=sharing
+![Screenshot_20220406-221351](https://user-images.githubusercontent.com/100133514/161983545-bf6484e3-9c44-47bd-a151-59be786a629a.png)
+![Screenshot_20220406-221334](https://user-images.githubusercontent.com/100133514/161983561-17b8793b-55b1-4c63-b16a-5b79938d7489.png)
+![Screenshot_20220406-220455](https://user-images.githubusercontent.com/100133514/161983574-09b798a8-aab7-44ca-bc8c-d0c9ebfdf19b.png)
